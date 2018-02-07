@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:elevation="6dp">
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorWhite"
+        >
+        <TextView
+            android:id="@+id/tv_student_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:minLines="1"
+            android:maxLines="2"
+            android:padding="2dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="PAULSON Robert"/>
+
+        <LinearLayout
+            android:id="@+id/layout_notes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="start"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:padding="2dp"
+                    android:layout_gravity="start"
+                    android:textAlignment="textStart"
+                    android:text="Moyenne : "
+                    android:textColor="@color/colorPrimaryDark"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_student_note_moyenne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:padding="2dp"
+                    android:layout_gravity="start"
+                    android:textAlignment="textStart"
+                    android:text="12/20"
+                    android:textColor="@color/colorPrimaryDark"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="end"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:padding="2dp"
+                    android:layout_gravity="end"
+                    android:textAlignment="textEnd"
+                    android:text="Ma note : "
+                    android:textColor="@color/colorPrimaryDark"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_student_note_personal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:padding="2dp"
+                    android:layout_gravity="end"
+                    android:textAlignment="textEnd"
+                    android:text="todo/20"
+                    android:textColor="@color/colorPrimaryDark"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_justification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            >
+
+            <EditText
+                android:id="@+id/etJustification"
+                android:background="@color/colorTransparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:padding="2dp"
+                android:layout_gravity="start"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorPrimaryDark"
+                android:textColorHint="@color/colorSoftGrey"
+                android:hint="@string/activity_project_detail_justification"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

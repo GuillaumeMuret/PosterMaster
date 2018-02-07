@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#19468E</color>
+    <color name="colorPrimaryDark">#193366</color>
+    <color name="colorAccent">#ED1C24</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorGrey">#BFBFBF</color>
+    <color name="colorSoftGrey">#DDDDDD</color>
+    <color name="colorError">#BF0000</color>
+    <color name="colorItemDivider">#7087AD</color>
+    <color name="colorBlue">#19468E</color>
+    <color name="colorRed">#BF0000</color>
+    <color name="colorTransparent">#00000000</color>
+    <color name="colorRedPressed">#ED1C24</color>
+    <color name="colorBluePressed">#7087AD</color>
+    <color name="colorDarkGrey">#3F3F3F</color>
+    <color name="colorTextHint">#DDDDDDDD</color>
+
+    <!-- Dialog color -->
+    <color name="colorDialogBackground">@color/colorPrimary</color>
+    <color name="colorDialogButton">@color/colorWhite</color>
+    <color name="colorDialogTitle">@color/colorWhite</color>
+
+</resources>

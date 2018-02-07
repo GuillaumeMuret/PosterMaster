@@ -1,0 +1,60 @@
+package com.murey.poster.postermaster.model.database;
+
+public class DatabaseVocabulary {
+
+    public static final String DATABASE_NAME = "poster-master-database";
+    public static final String TABLE_NAME_CONFIDENTIALITIES = "Confidentialities";
+    public static final String COLUMN_NAME_CONFIDENTIALITY_ID = "idConfig";
+    public static final String COLUMN_NAME_POSTER_ENABLE = "posterEnable";
+    public static final String COLUMN_NAME_DESCRIPTION = "description";
+    public static final String TABLE_NAME_PROJECTS = "Projects";
+    public static final String COLUMN_NAME_PROJECT_ID = "idProject";
+    public static final String COLUMN_NAME_OPEN_HOUSE_JURY = "openHouseProject";
+    public static final String COLUMN_NAME_TITLE = "title";
+    public static final String TABLE_NAME_POSTERS = "Posters";
+    public static final String COLUMN_NAME_POSTER_ID = "idPoster";
+    public static final String COLUMN_NAME_FILEPATH = "filepath";
+    public static final String COLUMN_NAME_POSTER_URI = "COLUMN_NAME_POSTER_URI";
+    public static final String TABLE_NAME_PRESENTATIONS = "Presentations";
+    public static final String COLUMN_NAME_PRESENTATION_ID = "idPresentation";
+    public static final String TABLE_NAME_JURY_PROJECTS = "JuryProjects";
+    public static final String COLUMN_NAME_JURY_ID = "idJury";
+    public static final String TABLE_NAME_JURIES = "Juries";
+    public static final String COLUMN_NAME_DATE = "date";
+    public static final String TABLE_NAME_SUPERVISORS = "Supervisors";
+    public static final String COLUMN_NAME_SUPERVISOR_ID = "idSupervisor";
+    public static final String TABLE_NAME_TEAMS = "Teams";
+    public static final String COLUMN_NAME_MEMBER_ID = "idMember";
+    public static final String TABLE_NAME_JURY_MEMBERS = "JuryMembers";
+    public static final String TABLE_NAME_MARKS_PRESENTATION_STUDENTS = "MarksPresentationStudentsDao";
+    public static final String COLUMN_NAME_STUDENT_ID = "idStudent";
+    public static final String TABLE_NAME_STUDENT_MARKS = "StudentMarks";
+    public static final String COLUMN_NAME_MARK = "mark";
+    public static final String COLUMN_NAME_MY_MARK = "myMark";
+    public static final String COLUMN_NAME_MY_MARK_TO_SYNC = "myMarkToSync";
+    public static final String COLUMN_NAME_NEED_TO_SYNC = "needToSync";
+    public static final String COLUMN_NAME_JUSTIFICATION = "justification";
+    public static final String COLUMN_NAME_AVERAGE_MARK = "averageMark";
+    public static final String TABLE_NAME_USERS = "Users";
+    public static final String COLUMN_NAME_USER_ID = "idUser";
+    public static final String COLUMN_NAME_USER_APP_ID = "idAppUser";
+    public static final String COLUMN_NAME_USER_NOTES = "userNotes";
+    public static final String COLUMN_NAME_USER_SERVER_ESEO_ID = "idServerEseoUser";
+    public static final String COLUMN_NAME_USER_NAME = "username";
+    public static final String COLUMN_NAME_USER_SALT = "salt";
+    public static final String COLUMN_NAME_PASSWORD = "password";
+    public static final String COLUMN_NAME_FORENAME = "forename";
+    public static final String COLUMN_NAME_SURNAME = "surname";
+    public static final String COLUMN_NAME_EMAIL = "email";
+    public static final String COLUMN_NAME_TOKEN = "token";
+    public static final String COLUMN_NAME_MODE_VISITOR = "visitor";
+    public static final String COLUMN_NAME_ALERT_ENABLE = "alert";
+    public static final String COLUMN_NAME_ALERT_DATE = "alertDate";
+    public static final String COLUMN_NAME_ALL_MANDATORY_DATA_RECEIVED = "mandatoryDataReceived";
+    public static final String COLUMN_NAME_PATH_PHOTO = "pathPhoto";
+    public static final String TABLE_NAME_USERS_ROLES = "UsersRoles";
+    public static final String COLUMN_NAME_USERS_ROLES_ID = "idRole";
+    public static final String TABLE_NAME_ROLES = "Roles";
+    public static final String TABLE_NAME_MARKS_POSTER_STUDENTS = "MarksPosterStudentsDao";
+
+}

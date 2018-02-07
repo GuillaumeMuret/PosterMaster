@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:elevation="6dp">
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorWhite"
+        >
+        <TextView
+            android:id="@+id/tv_project_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/activity_list_juries_content_text_size"
+            android:minLines="1"
+            android:maxLines="2"
+            android:padding="@dimen/activity_list_juries_text_padding"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Sir Robin the Not-Quite-So-Brave-as-Sir-Lancelot"/>
+        <TextView
+            android:id="@+id/tv_project_supervisor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/activity_list_juries_content_smaller_text_size"
+            android:padding="@dimen/activity_list_juries_text_padding"
+            android:layout_gravity="end"
+            android:textAlignment="textEnd"
+            android:text="Michael PALIN"
+            android:textColor="@color/colorPrimaryDark"
+            />
+
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorPrimary"
+    tools:context=".view.activity.ProjectListActivity"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimaryDark"
+            style="@style/MureyToolbar" />
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        >
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            >
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:padding="4dp"
+                android:background="@color/colorWhite"
+                >
+                <TextView
+                    android:id="@+id/tv_details_project_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="36sp"
+                    android:padding="2dp"
+                    android:minLines="2"
+                    android:maxLines="4"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:text="Monty Python And The Quest For The Holy Grail"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/activity_list_project_text_padding"
+                        android:text="@string/card_view_list_project_confidentiality"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/activity_list_project_content_text_size" />
+
+                    <TextView
+                        android:id="@+id/tv_project_confidentiality"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/activity_list_project_text_padding"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/activity_list_project_content_text_size" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:layout_gravity="start"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/activity_list_project_text_padding"
+                            android:text="@string/card_view_list_project_id"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/activity_list_project_content_text_size" />
+
+                        <TextView
+                            android:id="@+id/tv_project_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/activity_list_project_text_padding"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/activity_list_project_content_text_size" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:layout_gravity="end"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/activity_list_project_text_padding"
+                            android:text="@string/card_view_list_project_poster"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/activity_list_project_content_text_size" />
+
+                        <TextView
+                            android:id="@+id/tv_project_poster_enable"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/activity_list_project_text_padding"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/activity_list_project_content_text_size" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:textSize="24sp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:text="@string/activity_project_detail_supervisor"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_details_supervisor"
+                        android:padding="2dp"
+                        android:textSize="24sp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:text="Terry GILLIAM"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_all_poster"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <LinearLayout
+                            android:id="@+id/layout_image_poster"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="start"
+                            >
+
+                            <ImageView
+                                android:id="@+id/img_poster"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:adjustViewBounds="true"
+                                android:scaleType="centerInside"
+                                android:background="@color/colorPrimaryDark"
+                                android:padding="2dp"
+                                />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layout_download_poster"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:background="@drawable/selector_background_category_title"
+                            >
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/ic_download"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="16sp"
+                                android:padding="2dp"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:text="Télécharger le poster"
+                                />
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/ic_download"
+                                />
+
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:padding="2dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:text="Mes notes sur le poster :"
+                        />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            >
+                            <EditText
+                                android:id="@+id/etPosterNotes"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="16sp"
+                                android:padding="2dp"
+                                android:paddingLeft="8dp"
+                                android:paddingRight="8dp"
+                                android:paddingTop="2dp"
+                                android:paddingBottom="2dp"
+                                android:hint="Ecrivez une note..."
+                                android:textColorHint="@color/colorSoftGrey"
+                                android:background="@drawable/rect_border_grey"
+                                />
+
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="@drawable/selector_background_white_to_soft_grey"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_details_resume_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:padding="2dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:text="Decription:"
+                        />
+                    <TextView
+                        android:id="@+id/tv_details_project_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:textColor="@color/colorPrimary"
+                        android:text="Monty Python and the Holy Grail',1975,33,'Comédie','Le roi Arthur et les Chevaliers de la Table Ronde se lancent à la conquête du Graal, chevauchant de fantômatiques montures dans un bruitage de noix de coco cognées. La petite troupe va devoir passer mille épreuves, dont un chevalier à trois têtes, des jouvencelles en chaleur, voire même un terrible lapin tueur."
+                        />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:textSize="18sp"
+                    android:text="Equipe:"
+                    android:textColor="@color/colorPrimaryDark"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/project_details_students"
+                    android:background="@color/colorWhite"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/layout_average_note"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="24sp"
+                        android:layout_weight="2"
+                        android:layout_gravity="end"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/colorPrimary"
+                        android:padding="2dp"
+                        android:text="Moyenne : "/>
+
+                    <TextView
+                        android:id="@+id/tv_details_average_note"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="24sp"
+                        android:layout_weight="2"
+                        android:layout_gravity="end"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/colorPrimary"
+                        android:padding="2dp"
+                        android:text="16/20"/>
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

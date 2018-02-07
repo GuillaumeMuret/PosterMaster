@@ -1,0 +1,96 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.murey.poster.postermaster">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_app_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+
+        <provider
+            android:name=".utils.GenericFileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+
+        <!-- App Service -->
+        <service android:name=".service.AppService"
+            android:stopWithTask="true"/>
+
+        <!-- ServiceActivity "-->
+        <activity
+            android:name=".view.activity.ServiceActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <!-- SplashActivity -->
+        <activity
+            android:name=".view.activity.SplashActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            />
+
+        <!-- LoginActivity -->
+        <activity
+            android:name=".view.activity.LoginActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            />
+
+        <!-- Activity project list -->
+        <activity
+            android:name=".view.activity.ProjectListActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:label="@string/activity_project_list_title"
+            />
+
+        <!-- Activity project details -->
+        <activity
+            android:name=".view.activity.ProjectDetailsActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="stateHidden"
+            android:label="@string/activity_project_details_title"
+            />
+
+        <!-- UserAccount Activity -->
+        <activity
+            android:name=".view.activity.MyAccountActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:label="@string/activity_my_account_title"
+            />
+
+        <!-- Activity juries list -->
+        <activity
+            android:name=".view.activity.JuriesListActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:label="@string/activity_juries_list_title"
+            />
+
+        <!-- Activity open house -->
+        <activity
+            android:name=".view.activity.OpenHouseActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:label="@string/activity_open_house_title"
+            />
+
+        <receiver android:name=".service.AlarmReceiver" />
+
+    </application>
+
+
+</manifest>

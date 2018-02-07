@@ -1,0 +1,109 @@
+<resources>
+
+    <string name="app_name">Poster Master</string>
+
+    <!-- SplashActivity -->
+    <string name="splash_credit">\@2017–2018 | by MUREY</string>
+
+    <!-- LoginActivity -->
+    <string name="activity_login_subtitle">Login</string>
+    <string name="activity_login_request_canceled">Requête annulée</string>
+    <string name="activity_login_request_failed">Requête échouée… Vérifiez votre connexion</string>
+    <string name="login_hint_username">Enter your username</string>
+    <string name="login_hint_password">Enter your password</string>
+    <string name="login_message_error">Message erreur</string>
+    <string name="login_message_in_progress">Connexion…</string>
+    <string name="login_button">Connexion</string>
+    <string name="login_visitor">Visiteur</string>
+
+    <!-- Project List Activity -->
+    <string name="activity_project_list_title">Liste des projets</string>
+    <string name="activity_project_details_title">Détails du projet</string>
+    <string name="card_view_list_project_id">Projet n°</string>
+    <string name="card_view_list_project_supervisor">Superviseur : </string>
+    <string name="card_view_list_project_confidentiality">Confidentialité : </string>
+    <string name="card_view_list_project_poster">Poster : </string>
+    <string name="card_view_list_project_description">Description : </string>
+
+    <!--ProjectDetails Activity -->
+    <string name="activity_project_detail_supervisor">@string/card_view_list_project_supervisor</string>
+    <string name="activity_project_detail_confidentiality">@string/activity_project_detail_confidentiality </string>
+    <string name="activity_project_detail_justification">Justification…</string>
+
+    <!--UserAccount Activity -->
+    <string name="activity_my_account_title">Mon Compte</string>
+    <string name="activity_my_account_personal_information_title">Informations Personnelles</string>
+    <string name="activity_my_account_password_title">Mot de passe</string>
+    <string name="activity_my_account_last_name_hint">Nom</string>
+    <string name="activity_my_account_first_name_hint">Prénom</string>
+    <string name="activity_my_account_email_hint">E-mail</string>
+    <string name="activity_my_account_username_hint">Username</string>
+    <string name="activity_my_account_actual_password_hint">Actuel</string>
+    <string name="activity_my_account_new_password_hint">Nouveau</string>
+    <string name="activity_my_account_confirmation_password_hint">Confirmation</string>
+
+    <!-- Open house Activity -->
+    <string name="activity_open_house_title">Portes ouvertes</string>
+
+    <!-- Juries List Activity -->
+    <string name="activity_juries_list_title">Liste des jurys</string>
+    <string name="card_view_list_juries_id">Jury numéro : </string>
+    <string name="card_view_list_juries_date">Date : </string>
+    <string name="card_view_list_juries_num">Jury N°</string>
+    <string name="card_view_list_juries_alert">Alerte</string>
+    <string name="card_view_list_juries_members">Membres : </string>
+    <string name="card_view_list_juries_projects">Projets :</string>
+
+    <!-- Dialog quit app -->
+    <string name="dialog_quit_app_title">Quitter</string>
+    <string name="dialog_quit_app_content">Êtes-vous sûr de vouloir quitter l\'application ?</string>
+
+    <!-- Dialog quit app -->
+    <string name="dialog_disconnect_app_title">Se déconnecter</string>
+    <string name="dialog_disconnect_app_content">Êtes-vous sûr de vouloir vous déconnecter ? \nVous perdrez toutes vos données.</string>
+
+    <!-- Dialog alert permission -->
+    <string name="dialog_alert_permission_title">Attention !</string>
+    <string name="dialog_alert_permission_content">Vous devez autoriser toutes les permissions pour pouvoir utiliser l\'application au complet. Si vous ne les activez pas, l\'application ne fonctionnera pas normalement</string>
+
+    <!-- Dialog error connection -->
+    <string name="dialog_error_connection_title">Erreur de connexion</string>
+    <string name="dialog_error_connection_content">Vérifiez la connexion et essayez de renvoyer.</string>
+
+    <!-- Dialog non valid user -->
+    <string name="dialog_non_valid_user_title">Opération non autorisée</string>
+    <string name="dialog_non_valid_user_content">Vous n\'êtes pas autorisés à utiliser ce service.</string>
+
+    <!-- Dialog wait app -->
+    <string name="dialog_wait_title">Patientez</string>
+    <string name="dialog_wait_content">Patientez un moment…</string>
+
+    <!-- Dialog set student note -->
+    <string name="dialog_set_student_note_title">Nouvelle note</string>
+    <string name="dialog_set_student_note_my_note_for">Ma note pour </string>
+
+    <!-- Dialogs button -->
+    <string name="dialog_cancel">Annuler</string>
+    <string name="dialog_delete">Supprimer</string>
+    <string name="dialog_save">Enregistrer</string>
+    <string name="dialog_confirm">Confirmer</string>
+    <string name="dialog_retry">Réessayer</string>
+    <string name="dialog_ok">OK</string>
+
+    <!-- Menu items -->
+    <string name="menu_main_sync_all">Synchroniser</string>
+    <string name="menu_main_project">Projets</string>
+    <string name="menu_main_juries">Jurys</string>
+    <string name="menu_main_open_house">Portes ouvertes</string>
+    <string name="menu_main_sensors">Capteurs</string>
+    <string name="menu_main_logout" >Déconnexion</string>
+    <string name="menu_main_help" >Aide</string>
+
+    <string name="menu_activity_project_my_project">Mes projets</string>
+    <string name="menu_activity_project_all_project">Tous les projets</string>
+
+    <string name="menu_activity_juries_all_juries">Tous les jurys</string>
+    <string name="menu_activity_juries_my_juries">Mes jurys</string>
+
+
+</resources>

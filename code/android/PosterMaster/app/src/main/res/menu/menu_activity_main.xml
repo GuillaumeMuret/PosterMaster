@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group
+        android:id="@+id/group"
+        android:checkableBehavior="single">
+
+        <item android:id="@+id/action_sync_all"
+            android:icon="@drawable/ic_sync"
+            android:title="@string/menu_main_sync_all"
+            app:actionLayout="@layout/menu_counter"
+            />
+
+        <item android:id="@+id/action_projects"
+              android:icon="@drawable/ic_project"
+              android:title="@string/menu_main_project"/>
+
+        <item android:id="@+id/action_juries"
+            android:icon="@drawable/ic_juries"
+            android:title="@string/menu_main_juries"/>
+
+        <item android:id="@+id/action_open_house"
+            android:icon="@drawable/ic_open_door"
+            android:title="@string/menu_main_open_house"/>
+
+        <item android:id="@+id/action_disconnect"
+              android:icon="@drawable/ic_shutdown"
+              android:title="@string/menu_main_logout"/>
+
+    </group>
+</menu>
